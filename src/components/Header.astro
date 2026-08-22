@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import bison from "../assets/img/bison.jpg";
+---
+
+<header>
+  <a class="site-title" href="/">
+    <Image src={bison} alt="" width="36" />
+    corinne kamiya
+  </a>
+  <nav>
+    <a href="/resume">resume</a>
+    <a href="/contact">contact</a>
+    <a href="/links">links</a>
+    <a href="/recipes">recipes</a>
+  </nav>
+</header>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+  @media (max-width: 30rem) {
+    header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  .site-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--color-light-gray);
+  }
+  .site-title:hover img {
+    animation: shake 0.5s ease-out infinite;
+  }
+  nav {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+  @keyframes shake {
+    40% {
+      transform: rotate(6deg);
+    }
+    80% {
+      transform: rotate(-6deg);
+    }
+  }
+</style>

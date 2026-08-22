@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import recipeImg from "../assets/img/recipe_thumb.jpg";
+---
+
+<Layout>
+  <h1>recipes</h1>
+  <div class="photo-block">
+    <Image src={recipeImg} alt="" />
+  </div>
+  <p>i make a lot of food. these are some of my favorite recipes.</p>
+  <nav>
+    <ul>
+      <li><a href="/recipe/gyoza">gyoza</a></li>
+      <li><a href="/recipe/soft-pretzels">soft pretzels</a></li>
+      <li><a href="/recipe/spicy-whole-wheat-chocolate-chip-cookies">spicy whole wheat chocolate chip cookies</a></li>
+      <li><a href="/recipe/vegetarian-meatballs">vegetarian meatballs</a></li>
+    </ul>
+  </nav>
+</Layout>
+
+<style>
+  .photo-block {
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>

@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import linksImg from "../assets/img/links_thumb.jpg";
+import cageImg from "../assets/img/cage_detail_thumb.jpg";
+import chairImg from "../assets/img/chair_detail_thumb.jpg";
+import fishImg from "../assets/img/fish_detail_thumb.jpg";
+---
+
+<Layout>
+  <h1>places to go people to see.</h1>
+  <div class="photo-block">
+    <Image src={linksImg} alt="" />
+    <Image src={cageImg} alt="" />
+    <Image src={chairImg} alt="" />
+    <Image src={fishImg} alt="" />
+  </div>
+  <ul>
+    <li><a href="http://www.gayechan.com/" target="_blank">gaye chan</a></li>
+    <li><a href="http://www.beth-anne.com" target="_blank">beth cohen</a></li>
+    <li><a href="http://giantsquid.moonfruit.com" target="_blank">ryuta nakajima</a></li>
+    <li><a href="http://www.cardinaliphoto.com" target="_blank">michael cardinali</a></li>
+    <li><a href="http://www.joeytipton.com/" target="_blank">joey tipton</a></li>
+    <li><a href="https://maps.app.goo.gl/CwQ7kkPToR4CdbT66" target="_blank">molokai</a></li>
+    <li><a href="http://www2.aebisu.com/home" target="_blank">attack ebisu</a></li>
+    <li><a href="http://ayaloha.moonfruit.com" target="_blank">aya kawaguchi</a></li>
+    <li><a href="http://matkubo.blogspot.com/" target="_blank">mat kubo</a></li>
+    <li><a href="http://lenkadu.com" target="_blank">lenka chludova</a></li>
+    <li><a href="http://owningyouproject.blogspot.com/" target="_blank">dallas kavanagh</a></li>
+    <li><a href="http://www.catherinestack.com" target="_blank">catherine stack</a></li>
+    <li><a href="http://www.dhrosen.com" target="_blank">daniel rosen</a></li>
+    <li><a href="http://www.amandalohnes.com" target="_blank">amanda lohnes</a></li>
+    <li><a href="http://www.jungphil.com" target="_blank">phil jung</a></li>
+    <li><a href="http://www.tomgriggs.net" target="_blank">tom griggs</a></li>
+  </ul>
+</Layout>
+
+<style>
+  .photo-block {
+    margin-bottom: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: fit-content;
+    gap: 0 3rem;
+  }
+</style>

@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+import Layout from "./Layout.astro";
+import backImg from "../assets/img/back_thumb.jpg";
+import nextImg from "../assets/img/thatway_thumb.jpg";
+---
+
+<Layout>
+  <slot />
+  <div class="progress-links">
+    <a class="back-link" href=""><Image src={backImg} alt="back" /></a>
+    <a class="next-link" href=""><Image src={nextImg} alt="next" /></a>
+  </div>
+</Layout>
+
+<style>
+  .back-link {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+</style>

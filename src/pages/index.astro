@@ -1,11 +1,126 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import introImg from "../assets/img/start.jpg";
+import cageImg from "../assets/img/cage_detail_thumb.jpg";
+import chairImg from "../assets/img/chair_detail_thumb.jpg";
+import waxImg from "../assets/img/wax_thumb.jpg";
+import planeImg from "../assets/img/blueskies_thumb.jpg";
+import brooklynImg from "../assets/img/brooklyn_thumb.jpg";
+import basilImg from "../assets/img/basil_thumb.jpg";
+import waspImg from "../assets/img/wasps.jpg";
+import dodoImg from "../assets/img/dodo_thumb.jpg";
+import cartographyImg from "../assets/img/cartography_thumb.jpg";
+import travelImg from "../assets/img/travel_thumb.jpg";
+import viewboxImg from "../assets/img/viewbox_thumb.jpg";
+import birdImg from "../assets/img/book_thumb.jpg";
+import fishImg from "../assets/img/fish_detail_thumb.jpg";
+import kipperImg from "../assets/img/kip_thumb.jpg";
+import bronzeImg from "../assets/img/oldwork_thumb.jpg";
+import landscapeImg from "../assets/img/landscape_thumb.jpg";
+import cardImg from "../assets/img/card_thumb.jpg";
+import contactImg from "../assets/img/contact_info.jpg";
+import playingImg from "../assets/img/playing.jpg";
+import recipeImg from "../assets/img/recipe_thumb.jpg";
+import linksImg from "../assets/img/links_thumb.jpg";
+import pantsImg from "../assets/img/pants_thumb.jpg";
+import drawingImg from "../assets/img/drawing_thumb.jpg";
+import bearImg from "../assets/img/whenbear_thumb.jpg";
+import apartmentImg from "../assets/img/apartment_thumb.jpg";
+import tarotImg from "../assets/img/tarot_thumb.jpg";
 ---
 
 <Layout>
-	<Welcome />
+  <nav class="tile-grid">
+    <div class="intro-graphic"><Image src={introImg} alt="bison" /></div>
+    <a class="tile" href="/project/paper-cages"><Image src={cageImg} alt="paper cages" />paper cages</a>
+    <a class="tile" href="/project/discovering-buffalo"><Image src={chairImg} alt="discovering buffalo project" />discovering buffalo project</a>
+    <a class="tile" href="/project/evening-of-wax"><Image src={waxImg} alt="an evening of wax" />an evening of wax</a>
+    <a class="tile" href="/project/blue-skies"><Image src={planeImg} alt="blue skies are calling" />blue skies are calling</a>
+    <a class="tile" href="/project/brooklyn-distance-intimacy"><Image src={brooklynImg} alt="brooklyn distance + intimacy project" />brooklyn distance + intimacy project</a>
+    <a class="tile" href="/project/bury-the-work"><Image src={basilImg} alt="bury the work project" />bury the work project</a>
+    <a class="tile" href="/project/wasp-project"><Image src={waspImg} alt="wasp project" />wasp project</a>
+    <a class="tile" href="/project/dodos"><Image src={dodoImg} alt="dodos" />dodos</a>
+    <a class="tile" href="/project/egocentric-cartography"><Image src={cartographyImg} alt="egocentric cartography" />egocentric cartography</a>
+    <a class="tile" href="/project/travel-light"><Image src={travelImg} alt="travel light project" />travel light project</a>
+    <a class="tile" href="/project/walk-home"><Image src={viewboxImg} alt="the walk home project" />the walk home project</a>
+    <a class="tile" href="/project/book-about-birds"><Image src={birdImg} alt="a book about birds" />a book about birds</a>
+    <a class="tile" href="/project/fish-friends"><Image src={fishImg} alt="fish friends project" />fish friends project</a>
+    <a class="tile" href="/project/kipper"><Image src={kipperImg} alt="kipper the cat" />kipper the cat</a>
+    <a class="tile" href="/project/bronze-work"><Image src={bronzeImg} alt="bronze work" />bronze work</a>
+    <a class="tile" href="/project/landscape-project"><Image src={landscapeImg} alt="landscape project" />landscape project</a>
+    <a class="tile" href="/project/my-first-winter"><Image src={cardImg} alt="my first winter" />my first winter</a>
+    <a class="tile" href="/contact"><Image src={contactImg} alt="contact me" />contact me</a>
+    <a class="tile" href="/project/playing-in-class"><Image src={playingImg} alt="playing in class" />playing in class</a>
+    <a class="tile" href="/recipes"><Image src={recipeImg} alt="recipes i love" />recipes i love</a>
+    <a class="tile" href="/links"><Image src={linksImg} alt="places to go, people to see" />places to go, people to see</a>
+    <a class="tile" href="/project/trade-your-pants"><Image src={pantsImg} alt="trade your pants" />trade your pants</a>
+    <a class="tile" href="/resume"><Image src={drawingImg} alt="resume" />resume</a>
+    <a class="tile" href="/project/when-bear-was-scared"><Image src={bearImg} alt="when bear was scared" />when bear was scared</a>
+    <a class="tile" href="/project/model-home"><Image src={apartmentImg} alt="a model home" />a model home</a>
+    <a class="tile" href="/project/tarot-card-paintings"><Image src={tarotImg} alt="tarot card paintings" />tarot card paintings</a>
+  </nav>
 </Layout>
+
+<style>
+  .tile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+  }
+
+  @media (min-width: 36rem) {
+    .tile-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 54rem) {
+    .tile-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 72rem) {
+    .tile-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .intro-graphic {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  @media (min-width: 36rem) {
+    .intro-graphic {
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+  }
+
+  @media (min-width: 54rem) {
+    .intro-graphic {
+      padding-right: 1rem;
+    }
+  }
+
+  .intro-graphic img {
+    display: block;
+    margin: 0;
+  }
+
+  .tile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .tile:visited {
+    color: #776666;
+  }
+</style>
