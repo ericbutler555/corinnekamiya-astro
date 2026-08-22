@@ -3,18 +3,37 @@ import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
 import backImg from "../assets/img/back_thumb.jpg";
 import nextImg from "../assets/img/thatway_thumb.jpg";
+const { backLink, nextLink } = Astro.props;
 ---
 
 <Layout>
   <slot />
   <div class="progress-links">
-    <a class="back-link" href=""><Image src={backImg} alt="back" /></a>
-    <a class="next-link" href=""><Image src={nextImg} alt="next" /></a>
+    {
+      backLink && (
+        <a class="back-link" href={backLink}>
+          <Image src={backImg} alt="back" />
+        </a>
+      )
+    }
+    {
+      nextLink && (
+        <a class="next-link" href={nextLink}>
+          <Image src={nextImg} alt="next" />
+        </a>
+      )
+    }
   </div>
 </Layout>
 
 <style>
-  .back-link {
+  .progress-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .back-link,
+  .next-link {
     display: inline-block;
     margin-top: 1rem;
   }
