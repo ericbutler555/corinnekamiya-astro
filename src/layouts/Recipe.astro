@@ -2,9 +2,10 @@
 import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
 import backImg from "../assets/img/back_thumb.jpg";
+const { frontmatter } = Astro.props;
 ---
 
-<Layout>
+<Layout title={frontmatter.title} description={frontmatter.description}>
   <slot />
   <a class="back-link" href="/recipes"><Image src={backImg} alt="back to recipes" /></a>
 </Layout>

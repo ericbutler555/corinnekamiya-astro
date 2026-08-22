@@ -3,10 +3,10 @@ import { Image } from "astro:assets";
 import Layout from "./Layout.astro";
 import backImg from "../assets/img/back_thumb.jpg";
 import nextImg from "../assets/img/thatway_thumb.jpg";
-const { backLink, nextLink } = Astro.props;
+const { backLink, nextLink, title, description } = Astro.props;
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <slot />
   <div class="progress-links">
     {
