@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import cartography2Img from "../../../assets/img/cartography2.jpg";
+import cartography1Img from "../../../assets/img/cartography1.jpg";
+---
+
+<ProjectLayout backLink="/" title="egocentric cartography" description="a project about finding the way home by streetlight.">
+  <Image src={cartography2Img} alt="cartography 2" />
+  <Image src={cartography1Img} alt="cartography 1" />
+  <p class="project-description">egocentric cartography--a project about finding home and mapping the way with streetlights as my constellations.</p>
+</ProjectLayout>

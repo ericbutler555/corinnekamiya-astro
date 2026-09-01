@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import viewbox4Img from "../../../assets/img/viewbox_installed4.jpg";
+import viewboxInstallationImg from "../../../assets/img/viewbox_installation.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/walk-home/2" title="the walk home project" description="a series of 18 paper view boxes, each with a view of part of my walk home.">
+  <Image src={viewbox4Img} alt="paper view boxes" />
+  <Image src={viewboxInstallationImg} alt="close up of a viewbox" />
+  <p class="project-description">each box has a part of my walk home. there are eighteen boxes in my thesis show.</p>
+</ProjectLayout>

@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import crane1Img from "../../../assets/img/crane1.jpg";
+import crane2Img from "../../../assets/img/crane2.jpg";
+---
+
+<ProjectLayout backLink="/project/bronze-work" nextLink="/project/bronze-work/3" title="bronze work" description="examples of bronze castings done over several years.">
+  <Image src={crane1Img} alt="crane 1" />
+  <Image src={crane2Img} alt="crane 2" width="396" />
+</ProjectLayout>

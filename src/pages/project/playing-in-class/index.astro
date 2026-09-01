@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import kite2Img from "../../../assets/img/kite2.jpg";
+import kite1Img from "../../../assets/img/kite1.jpg";
+---
+
+<ProjectLayout backLink="/" title="playing in class" description="a collaborative project flying kites with tom griggs.">
+  <Image src={kite2Img} alt="flying kites in the park 2" />
+  <Image src={kite1Img} alt="flying kites in the park 1" />
+  <p class="project-description">a collaborative project with tom griggs. we made paper kites and got to fly kites for grad school credit. fun fun fun.</p>
+</ProjectLayout>

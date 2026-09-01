@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import wax7Img from "../../../assets/img/wax7.jpg";
+import wax10Img from "../../../assets/img/wax10.jpg";
+---
+
+<ProjectLayout backLink="/project/evening-of-wax/4" nextLink="/project/evening-of-wax/6" title="an evening of wax" description="a one-night group show where every artwork was made of wax.">
+  <Image src={wax7Img} alt="wax 7" />
+  <Image src={wax10Img} alt="wax 10" />
+  <p class="project-description">tasha nakata-nagao made these awesome soybean crayons. and for a month the wax room where we all worked together smelled like a kindergarten class.</p>
+</ProjectLayout>

@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import waxImg from "../../../assets/img/waxfoolcard.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/evening-of-wax/2" title="an evening of wax" description="a one-night group show where every artwork was made of wax.">
+  <Image src={waxImg} alt="wax fool society card" />
+  <p class="project-description">one of my favorite shows. i was in it and i helped to put it together and it included some of my favorite hawaii artists--(in order from top row left) jason minami, fred roster, corinne kamiya (that's me), mat kubo, marc shiraki, frank sheriff, and tasha nakata-nagao.</p>
+  <p class="project-description">it was just one night, but months of preparations. one of my favorite bands, at sea, played while wax lightbulbs came down from the heat of the night and their equipment. it was beautiful, and just so we are clear--everything was wax, including the parafin tables and frank's grill.</p>
+</ProjectLayout>

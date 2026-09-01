@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import basil1Img from "../../../assets/img/basil1.jpg";
+import basil2Img from "../../../assets/img/basil2.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/bury-the-work/2" title="bury the work project" description="a gift project of individual basil plants grown in handmade paper pots.">
+  <Image src={basil1Img} alt="basil" />
+  <Image src={basil2Img} alt="basil 2" />
+  <p class="project-description">i've done a number of gift projects and in some way i felt that this one was one of the most sucessful. the little plants are basil that i grew. and the boxes are all handmade paper. there are the elements of labor and care built into this, but in order to really take care of this plant, you need to bury my labor. and it still asks a lot, but gives something really tangible back.</p>
+</ProjectLayout>

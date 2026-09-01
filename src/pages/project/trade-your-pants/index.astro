@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import trade2Img from "../../../assets/img/trade_your_pants_ny2.jpg";
+import pants2Img from "../../../assets/img/pants2.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/trade-your-pants/2" title="trade your pants" description="people were invited to give me their old pants for me to re-sew into hats or bags or something useful.">
+  <Image src={trade2Img} alt="corinne sewing" width="432" />
+  <Image src={pants2Img} alt="pants" />
+  <p class="project-description">the 'trade your pants' project started with a show in hawaii called eco/logic, and i did it as a mail-in project. i sent postcards to hawaii and left them in the gallery for people to take and mail to me with a pair of pants which i would then sew into hats or bags or something useful. and since then i have kind of been extending the project into an ongoing thing. i also did the project intensively for a month in new york at a space on the lower east side. (more details on the next page)</p>
+</ProjectLayout>

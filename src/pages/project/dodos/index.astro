@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import dodo7Img from "../../../assets/img/dodo7.jpg";
+import dodo8Img from "../../../assets/img/dodo8.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/dodos/2" title="dodos" description="a series of kinetic bronze dodos trying to learn to fly.">
+  <Image src={dodo7Img} alt="dodo 7" />
+  <Image src={dodo8Img} alt="dodo 8" />
+  <p class="project-description">a series of kinetic dodos. i made them for about four years. they are trying to learn to fly.</p>
+</ProjectLayout>

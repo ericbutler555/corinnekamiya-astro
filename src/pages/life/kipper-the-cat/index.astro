@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import kip1Img from "../../../assets/img/kip1.jpg";
+import kip3Img from "../../../assets/img/kip3.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/life/kipper-the-cat/2" title="kipper the cat" description="photos of my cat, kipper.">
+  <Image src={kip1Img} alt="kipper the cat" />
+  <Image src={kip3Img} alt="kipper the cat 3" />
+  <p class="project-description">i've discovered that i am the type of person that takes a lot of pictures of my cat. he's sort of a disaster sometimes, but i still really like him.</p>
+</ProjectLayout>

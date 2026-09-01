@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import tradeImg from "../../../assets/img/trade_your_pants_ny.jpg";
+import trade3Img from "../../../assets/img/trade_your_pants_ny3.jpg";
+---
+
+<ProjectLayout backLink="/project/trade-your-pants" nextLink="/project/trade-your-pants/3" title="trade your pants" description="people were invited to give me their old pants for me to re-sew into hats or bags or something useful.">
+  <Image src={tradeImg} alt="trade your pants" />
+  <Image src={trade3Img} alt="tara de la garza, the great unpicker, among other titles." />
+  <p class="project-description">in new york i sat and did the sewing for the project in a space provided by the group no longer empty (which takes spaces in new york and negotiates with landlords to have temporary exhibitions in these spaces). the space was on east broadway between chinatown and the lower east side. tara de la garza, the curator, sat with me the whole time and became the 'great unpicker' of my project. it was really wonderful and made me feel so welcomed in new york.</p>
+</ProjectLayout>

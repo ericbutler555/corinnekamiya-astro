@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import blueSkies2Img from "../../../assets/img/blue_skies2.jpg";
+import blueSkies1Img from "../../../assets/img/blue_skies1.jpg";
+---
+
+<ProjectLayout backLink="/" title="blue skies are calling" description="a set of tiny paper prop planes with propellers and wheels that really turn.">
+  <Image src={blueSkies2Img} alt="blue skies piece one, a handmade paper airplane, made with handmade paper" />
+  <Image src={blueSkies1Img} alt="blue skies two" />
+  <p class="project-description">making these tiny planes for command option escape at mark's garage in march 2010. they are in progress. i am really excited about them. the propellers and wheels really turn.</p>
+</ProjectLayout>

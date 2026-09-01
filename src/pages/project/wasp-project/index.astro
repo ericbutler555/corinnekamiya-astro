@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import wasps3Img from "../../../assets/img/wasps3.jpg";
+import wasps2Img from "../../../assets/img/wasps2.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/wasp-project/2" title="wasp project" description="castings of bronze wasps in a swarm-like mobile.">
+  <Image src={wasps3Img} alt="wasps" />
+  <Image src={wasps2Img} alt="wasp close-up" />
+  <p class="project-description">walking into a wasp's nest sounds like a bad thing. and maybe it wasn't the smartest thing i ever did. but as i walked through the wasps i could feel their wings against my skin. and the sound of it revereberated through my whole body, and made me feel connected in a way that i never had before. so i spent two years casting bronze wasps and making them into this.</p>
+</ProjectLayout>

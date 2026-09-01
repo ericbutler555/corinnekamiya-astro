@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import view3Img from "../../../assets/img/view3.jpg";
+import view5Img from "../../../assets/img/view5.jpg";
+---
+
+<ProjectLayout backLink="/project/walk-home/3" title="the walk home project" description="a series of 18 paper view boxes, each with a view of part of my walk home.">
+  <Image src={view3Img} alt="inside view 3" />
+  <Image src={view5Img} alt="inside view 5" />
+</ProjectLayout>

@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import winter2Img from "../../../assets/img/winter2.jpg";
+import winter1Img from "../../../assets/img/winter1.jpg";
+---
+
+<ProjectLayout backLink="/" title="my first winter" description="my first winter in new england was extraordinarily beautiful and kind of horrible.">
+  <Image src={winter2Img} alt="a bird perched in a winter tree" />
+  <Image src={winter1Img} alt="winter trees" />
+  <p class="project-description">this was my first taste of new england winter. it was kind of a shock, extraordinarily beautiful, and kind of horrible all at once.</p>
+</ProjectLayout>

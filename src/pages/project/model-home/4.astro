@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import apt5Img from "../../../assets/img/apartment5.jpg";
+import apt6Img from "../../../assets/img/apartment6.jpg";
+import apt8Img from "../../../assets/img/apartment8.jpg";
+---
+
+<ProjectLayout backLink="/project/model-home/3" nextLink="/project/model-home/5" title="a model home" description="a scale model of my apartment made of construction paper.">
+  <Image src={apt5Img} alt="apartment 5" />
+  <Image src={apt6Img} alt="apartment 6" />
+  <Image src={apt8Img} alt="apartment 8" />
+</ProjectLayout>

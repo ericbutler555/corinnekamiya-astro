@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import tarot6Img from "../../../assets/img/tarot_6.jpg";
+import tarot18Img from "../../../assets/img/tarot_18.jpg";
+---
+
+<ProjectLayout backLink="/project/tarot-card-paintings/3" title="tarot card paintings" description="a series of watercolor paintings of tarot cards.">
+  <Image src={tarot6Img} alt="tarot card, the lovers, with geese" />
+  <Image src={tarot18Img} alt="the moon with blue footed boobies" />
+</ProjectLayout>

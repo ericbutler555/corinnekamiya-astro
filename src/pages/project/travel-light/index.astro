@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import travelLightImg from "../../../assets/img/travellight.jpg";
+import travelLight2Img from "../../../assets/img/travellight2.jpg";
+---
+
+<ProjectLayout backLink="/" title="travel light" description="large format photos of all the pictures i ever took.">
+  <Image src={travelLightImg} alt="pictures of all my pictures" />
+  <Image src={travelLight2Img} alt="more pictures of all of my pictures" />
+  <p class="project-description">when i was nineteen i moved away from hawaii. it was a big deal to me, the first time i had ever moved anywhere. and in an effort to learn to travel lightly, i decided to take large format pictures of all of the pictures i had ever took and all the stuff that was on my walls when i was younger. and when it was done, i made posters and threw all of the actual pictures out. sometimes i regret it, sometimes i am amazed that i really did it, and sometimes i feel this thing that i did when i was nineteen changed so much about how i make art and how i live.</p>
+</ProjectLayout>

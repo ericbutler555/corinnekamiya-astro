@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import apronImg from "../../../assets/img/pants_apron.jpeg";
+import broadwayImg from "../../../assets/img/pants_ebroadway.jpeg";
+import bagImg from "../../../assets/img/pants_bag2.jpeg";
+---
+
+<ProjectLayout backLink="/project/trade-your-pants/2" title="trade your pants" description="people were invited to give me their old pants for me to re-sew into hats or bags or something useful.">
+  <Image src={apronImg} alt="apron" />
+  <Image src={broadwayImg} alt="east broadway" />
+  <Image src={bagImg} alt="bag" />
+</ProjectLayout>

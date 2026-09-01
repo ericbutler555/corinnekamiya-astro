@@ -1,7 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import contactImg from "../assets/img/contactinfo.jpg";
 ---
 
 <Layout title="contact" description="if you want to contact me.">
-  <h1>contact me</h1>
+  <a href="mailto:corinne.kamiya@gmail.com"><Image src={contactImg} alt="contact card" /></a>
 </Layout>

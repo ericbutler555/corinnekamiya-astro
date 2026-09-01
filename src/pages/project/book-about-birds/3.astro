@@ -1,0 +1,9 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import book2Img from "../../../assets/img/book2.jpg";
+---
+
+<ProjectLayout backLink="/project/book-about-birds/2" nextLink="/project/book-about-birds/4" title="a book about birds" description="a series of lithographs bound into a book.">
+  <Image src={book2Img} alt="book page 2" />
+</ProjectLayout>

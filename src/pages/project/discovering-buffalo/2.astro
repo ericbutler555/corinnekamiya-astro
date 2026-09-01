@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import chair8Img from "../../../assets/img/chair8.jpg";
+import chair5Img from "../../../assets/img/chair5.jpg";
+---
+
+<ProjectLayout backLink="/project/discovering-buffalo" nextLink="/project/discovering-buffalo/3" title="discovering buffalo" description="a chair made of dram bottles and paper cut outs of trees and bison.">
+  <Image src={chair8Img} alt="chair 8" />
+  <Image src={chair5Img} alt="chair 5" />
+  <p class="project-description">the paper boxes contain the cut offs of the cut outs in the bottles that make up the chair. each box is made by hand.</p>
+</ProjectLayout>

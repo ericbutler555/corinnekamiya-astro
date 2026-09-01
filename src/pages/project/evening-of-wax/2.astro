@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import wax8Img from "../../../assets/img/wax8.jpg";
+import wax9Img from "../../../assets/img/wax9.jpg";
+---
+
+<ProjectLayout backLink="/project/evening-of-wax" nextLink="/project/evening-of-wax/3" title="an evening of wax" description="a one-night group show where every artwork was made of wax.">
+  <Image src={wax8Img} alt="wax 8" />
+  <Image src={wax9Img} alt="wax 9" />
+  <p class="project-description">this is my piece for the show. at the end of the night most of it was broken, and i gave pieces of it away. i have reports of people trying to save wasps in their refrigerators and others of people forgetting pieces in their cars only to find a melted puddle of wax.</p>
+</ProjectLayout>

@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import brooklyn3Img from "../../../assets/img/brooklyn3.jpg";
+import brooklyn2Img from "../../../assets/img/brooklyn2.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/brooklyn-distance-intimacy/2" title="brooklyn distance and intimacy project" description="paper view boxes with cutout scenes of brooklyn inside.">
+  <Image src={brooklyn3Img} alt="outside of view boxes" />
+  <Image src={brooklyn2Img} alt="brooklyn, flatbush" />
+  <p class="project-description">i moved to brooklyn and i made these boxes. the interior scenes can be viewed from both sides.</p>
+</ProjectLayout>

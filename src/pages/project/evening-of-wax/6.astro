@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import wax13Img from "../../../assets/img/wax13.jpg";
+import wax5Img from "../../../assets/img/wax5.jpg";
+---
+
+<ProjectLayout backLink="/project/evening-of-wax/5" title="an evening of wax" description="a one-night group show where every artwork was made of wax.">
+  <Image src={wax13Img} alt="wax 13" />
+  <Image src={wax5Img} alt="wax 5" />
+  <p class="project-description">the end of the night. just looking at these pictures makes me sort of happy. i think we should do a wax fool society reunion...</p>
+</ProjectLayout>

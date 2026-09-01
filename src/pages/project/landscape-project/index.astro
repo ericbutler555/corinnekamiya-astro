@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import landscape4Img from "../../../assets/img/landscape4.jpg";
+import landscape5Img from "../../../assets/img/landscape5.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/landscape-project/2" title="landscape project" description="paper landscape sculptures perched precariously on tall paper stilts.">
+  <Image src={landscape4Img} alt="landscape project" />
+  <Image src={landscape5Img} alt="landscape overview" />
+  <p class="project-description">this project was for my thesis. they are all made of paper, and at the end stood about four feet and a half feet tall. i saved all the cut out pieces and kept them inside of the boxes. at the end of my thesis show most of the work had collapsed.</p>
+</ProjectLayout>

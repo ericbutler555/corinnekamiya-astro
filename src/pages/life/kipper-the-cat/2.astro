@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import kip2Img from "../../../assets/img/kip2.jpg";
+import kip4Img from "../../../assets/img/kip4.jpg";
+---
+
+<ProjectLayout backLink="/life/kipper-the-cat" nextLink="/life/kipper-the-cat/3" title="kipper the cat" description="photos of my cat, kipper.">
+  <Image src={kip2Img} alt="kip in a mailing box, he really likes them for some reason" />
+  <Image src={kip4Img} alt="kip sleeping next to my computer playing sans soleil by chris marker" />
+</ProjectLayout>

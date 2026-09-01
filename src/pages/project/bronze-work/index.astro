@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import beeMachineImg from "../../../assets/img/bee_machine.jpg";
+import beeDetailImg from "../../../assets/img/bee_detail.jpg";
+---
+
+<ProjectLayout backLink="/" nextLink="/project/bronze-work/2" title="bronze work" description="examples of bronze castings done over several years.">
+  <Image src={beeMachineImg} alt="bee machine" />
+  <Image src={beeDetailImg} alt="bee machine detail" />
+  <p class="project-description">i was a bronze caster for about six years. i loved it, but don't do so much of this work anymore. i still love it, it just stopped feeling fresh to me. but maybe one day i will go back to this. my mom wants me to--she says she doesn't want paper sculptures.</p>
+</ProjectLayout>

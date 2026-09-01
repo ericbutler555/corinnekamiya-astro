@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import chair3Img from "../../../assets/img/chair3.jpg";
+import chair4Img from "../../../assets/img/chair4.jpg";
+---
+
+<ProjectLayout backLink="/project/discovering-buffalo/3" title="discovering buffalo" description="a chair made of dram bottles and paper cut outs of trees and bison.">
+  <Image src={chair3Img} alt="chair 3" />
+  <Image src={chair4Img} alt="chair 4" />
+  <p class="project-description">i did this project in boston. this project was about how memory can be fragile without a shared history. i started it because i felt sort of adrift in boston and i wanted to give the red boxes, the remnants of labor, as a symbol of this process and as a physical tie between myself and my community. and then the contemporary museum in hawaii asked me to make it again. so i did. and it seems strange but wonderful to have made this again in hawaii. even though carrying a glass chair in my carry-on luggage was extraordinarily nerve-wracking.</p>
+</ProjectLayout>

@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import ProjectLayout from "../../../layouts/Project.astro";
+import fishImg from "../../../assets/img/fish.jpg";
+import fishDetailImg from "../../../assets/img/fish_detail.jpg";
+---
+
+<ProjectLayout backLink="/" title="fish friends project" description="i gave a fish to everyone in my graduate class.">
+  <Image src={fishImg} alt="fish" />
+  <Image src={fishDetailImg} alt="fish detail" />
+  <p class="project-description">i gave a fish to everyone in my graduate class. one person cried. others were happy to have a pet, someone waited until the end to pick the 'ugliest' fish that would hopefully live the longest. (which by some strange coincidence has been true.) and it has been a year now. many of the fish have died, others have changed color, some lived with my turtles for the winter break. (although i had to evacuate the fish when the turtles started getting hungry in spring and ate one of the fish.) overall it has been a strange project about giving a gift that asks a lot back.</p>
+</ProjectLayout>
