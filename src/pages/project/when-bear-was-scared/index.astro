@@ -2,9 +2,12 @@
 import { Image } from "astro:assets";
 import ProjectLayout from "../../../layouts/Project.astro";
 import whenBearImg from "../../../assets/img/whenbear_thumb.jpg";
+import bearbook1Img from "../../../assets/img/bearbook1.jpg"
+import bearbook2Img from "../../../assets/img/bearbook2.jpg"
 ---
 
 <ProjectLayout backLink="/" title="when bear was scared" description="a children's book i wrote and illustrated.">
-  <Image src={whenBearImg} alt="when bear was scared" />
-  <p class="project-description">i just self-published this children's book. i am really excited about it.</p>
+  <Image src={bearbook1Img} alt="early drawing from when bear was scared" width={432} />
+  <Image src={bearbook2Img} alt="another early sketch from when bear was scared" width={432} />
+  <p class="project-description">i just self-published a children’s book called <em>when bear was scared</em>. i am really excited about it.</p>
 </ProjectLayout>
